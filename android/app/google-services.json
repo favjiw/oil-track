@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "81320372046",
+    "project_id": "oiltrack-fe169",
+    "storage_bucket": "oiltrack-fe169.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81320372046:android:607c5479750a120700201f",
+        "android_client_info": {
+          "package_name": "com.example.oiltrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0S8eACCrCY1kNH54sNHf6Q5EaJkpFUOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
