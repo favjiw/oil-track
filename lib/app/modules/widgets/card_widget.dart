@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../shared/theme.dart';
+
 class CustomCard extends StatelessWidget {
   const CustomCard({super.key, required this.child});
 
@@ -10,20 +12,18 @@ class CustomCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        // Card Content
         Container(
           padding: const EdgeInsets.all(16.0),
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Colors.blue[200]!,
-                Colors.blue[300]!,
-                Colors.blue[400]!,
-                Colors.blue[500]!,
-                Colors.blue[600]!,
+                blueGrad1,
+                blueGrad2
               ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
             ),
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(24),
           ),
           child: child,
         ),
@@ -31,7 +31,7 @@ class CustomCard extends StatelessWidget {
         Positioned.fill(
           child: SvgPicture.asset(
             'assets/images/texture-1.svg',
-            fit: BoxFit.cover, // Adjust how the image is displayed
+            fit: BoxFit.cover,
           ),
         ),
       ],
