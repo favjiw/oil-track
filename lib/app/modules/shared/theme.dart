@@ -13,3 +13,4 @@ Color blue900 = const Color(0xFF000D33);
 Color blue950 = const Color(0xFF000619);
 Color blueGrad1 = const Color(0xFF013FFC);
 Color blueGrad2 = const Color(0xFF012696);
+Color greyFilled = const Color(0xFFC4C4C4);
