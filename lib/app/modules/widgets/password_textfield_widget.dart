@@ -8,8 +8,10 @@ class PasswordTextField extends GetWidget<LoginController> {
     super.key,
     required this.controllerField,
     required this.textInputAction,
+    required this.hintText,
   });
 
+  final String hintText;
   final TextEditingController controllerField;
   final TextInputAction textInputAction;
 
@@ -31,7 +33,7 @@ class PasswordTextField extends GetWidget<LoginController> {
             borderSide: BorderSide.none,
             borderRadius: BorderRadius.circular(8.0),
           ),
-          hintText: 'Enter your password',
+          hintText: hintText,
           suffixIcon: IconButton(
             splashColor: Colors.transparent,
             onPressed: () {
