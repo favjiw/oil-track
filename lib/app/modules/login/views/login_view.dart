@@ -43,6 +43,7 @@ class LoginView extends GetView<LoginController> {
                     ),
                     SizedBox(height: 16.0),
                     PasswordTextField(
+                      hintText: 'Enter your password',
                       controllerField: controller.passwordController,
                       textInputAction: TextInputAction.done,
                     ),
@@ -74,12 +75,17 @@ class LoginView extends GetView<LoginController> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text('Don\'t have an account?'),
+                          Text(
+                            'Don\'t have an account?',
+                            style: TextStyle(fontSize: 12.0),
+                          ),
                           GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              Get.toNamed('/register');
+                            },
                             child: Text(
                               ' Register now',
-                              style: TextStyle(color: blue500),
+                              style: TextStyle(color: blue500, fontSize: 12.0),
                             ),
                           ),
                         ],
